@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+.logo{
+    height:100px;
+    width: 250px;
+}
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: aqua;
+}
+
+/* body{
+    display: flex;
+} */
+
+.images{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+}
+.images .photobackground{
+    height: 60%;
+    position: absolute;
+    left: 5%;
+    bottom: 0;
+    transform: translateX(-25%);
+    transition: top 50ms;
+}
+.images .photo{
+    height: 65%;
+    position: absolute;
+    left: 6%;
+    bottom: 0;
+    transform: translateX(-25%);
+    transition: left 50ms;
+}
+
+.images:hover .photobackground{
+    bottom: 5px;
+}
+.images:hover .photo{
+    left: 2%;
+}
+
+.detail{
+    position: absolute;
+    left: 55%;
+    right: 5%;
+    margin-top: 10%;
+}
+.detail h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 20px;
+}
+span{
+    color: orange;
+}
+.detail p{
+    color: #555;
+    line-height: 20px;
+}
+.detail a{
+    background: orange;
+    padding: 10px 18px;
+    font-weight: bold;
+    color: #fff;
+    display:inline-block;
+    position: relative;
+    align-self: center;
+    margin-right: 20px;
+    border-radius: 5px;
+}
